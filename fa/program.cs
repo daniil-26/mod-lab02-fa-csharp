@@ -30,13 +30,13 @@ namespace fans
         public static State c = new State()
         {
             Name = "c",
-            IsAcceptState = true,
+            IsAcceptState = false,
             Transitions = new Dictionary<char, State>()
         };
         public static State d = new State()
         {
             Name = "d",
-            IsAcceptState = true,
+            IsAcceptState = false,
             Transitions = new Dictionary<char, State>()
         };
         public static State e = new State()
@@ -92,7 +92,7 @@ namespace fans
         public static State c = new State()
         {
             Name = "c",
-            IsAcceptState = true,
+            IsAcceptState = false,
             Transitions = new Dictionary<char, State>()
         };
         public static State d = new State()
@@ -179,7 +179,7 @@ namespace fans
     {
         static void Main(string[] args)
         {
-            String s = "011111";
+            String s = "01111";
             FA1 fa1 = new FA1();
             bool? result1 = fa1.Run(s);
             Console.WriteLine(result1);
